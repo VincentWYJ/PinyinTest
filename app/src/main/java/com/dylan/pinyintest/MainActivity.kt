@@ -2,6 +2,7 @@ package com.dylan.pinyintest
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.text.TextUtils
 import android.util.Log
 import android.widget.Toast
 import com.github.promeg.pinyinhelper.Pinyin
@@ -17,8 +18,8 @@ class MainActivity : AppCompatActivity() {
 
         convert_btn.setOnClickListener {
 
-            var content: String? = content_tiet.text.toString()
-            if (content == null) {
+            var content: String = content_tiet.text.toString()
+            if (TextUtils.isEmpty(content)) {
                 Toast.makeText(this, "请输入内容，谢谢", Toast.LENGTH_SHORT).show()
             } else {
                 //pinyin4j(content)
