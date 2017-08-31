@@ -1,4 +1,4 @@
-# PinyinTest
+﻿# PinyinTest
 对Pinyin4j、TinyPinyin及JPinyin三个汉字转拼音库通过简单的测试代码进行比较。
 
 1、TinyPinyin——https://github.com/promeG/TinyPinyin
@@ -48,7 +48,7 @@ fun pinyin4j(content: String) {
 方法PinyinHelper.toHanyuPinyinStringArray(c, hanyuPinyinOutputFormat)，如果是汉字，result[0]就是转换的结果；否则result为null，取原字符c。
 
 3、JPinyin——
-以Pinyin4j作为基础做了一些改进。
+以Pinyin4j作为基础做了一些改进。CCCCCCCCCCCCCCCCCCCCCCCCCC
 build.gradle：
 compile 'com.github.stuxuhai:jpinyin:1.1.8'
 Java代码：
